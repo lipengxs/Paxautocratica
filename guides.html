@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAX AUTOCRATICA Guides - Game Tips, Strategies & Walkthroughs</title>
+    <meta name="description" content="Master PAX AUTOCRATICA with comprehensive guides, tips, and strategies. Learn colony management, FPS combat tactics, roguelike progression, and advanced gameplay mechanics in PAX AUTOCRATICA.">
+    <meta name="keywords" content="PAX AUTOCRATICA guides, PAX AUTOCRATICA tips, PAX AUTOCRATICA strategies, PAX AUTOCRATICA walkthrough, colony sim guide, PAX AUTOCRATICA tutorial, PAX AUTOCRATICA gameplay guide">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pax-autocratica.com/guides">
+    <meta property="og:title" content="PAX AUTOCRATICA Guides - Game Tips, Strategies & Walkthroughs">
+    <meta property="og:description" content="Master PAX AUTOCRATICA with comprehensive guides, tips, and strategies for colony management and FPS combat.">
+    <meta property="og:image" content="https://pax-autocratica.com/static/logo.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PAX AUTOCRATICA Guides - Game Tips & Strategies">
+    <meta name="twitter:description" content="Master PAX AUTOCRATICA with comprehensive guides, tips, and strategies for colony management and FPS combat.">
+    <meta name="twitter:image" content="https://pax-autocratica.com/static/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="apple-touch-icon" href="static/logo.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://pax-autocratica.com/guides">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/base.css?v=1.0.0">
+    
+    <!-- Microsoft Validation -->
+    <meta name="msvalidate.01" content="B362957FC36C5EDDD6079B6D78330424">
+    
+    <!-- IndexNow -->
+    <meta name="yandex-verification" content="ee9f27884397bc6d" />
+    <meta name="IndexNow-Key" content="B362957FC36C5EDDD6079B6D78330424">
+    <meta name="IndexNow-Url" content="https://pax-autocratica.com/guides">
+    
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDFZLSQVMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CDFZLSQVMZ');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3143538773884507"
+    crossorigin="anonymous"></script>
+    <style>
+        .guides-hero {
+            background: linear-gradient(135deg, rgba(10, 26, 46, 0.95), rgba(22, 33, 62, 0.90)), 
+                        url('static/images/screenshots/img-15-c354a48f.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--secondary-color);
+            padding: 150px 0 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .news-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 800;
+        }
+
+        .news-hero p {
+            font-size: 1.3rem;
+            color: var(--light-accent);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .news-content {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(30, 60, 80, 0.5), rgba(50, 80, 100, 0.3)),
+                        radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1), transparent);
+        }
+
+        .news-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .news-tab {
+            background: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .news-tab.active,
+        .news-tab:hover {
+            background: var(--accent-color);
+            color: var(--secondary-color);
+        }
+
+        .news-list {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .news-item {
+            background: var(--secondary-color);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px var(--shadow-color);
+        }
+
+        .news-item-header {
+            padding: 2rem 2rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .news-category {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #ffffff;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+        }
+
+        .news-title {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .news-title a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .news-title a:hover {
+            color: #00d4ff;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .news-date {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .news-item-content {
+            padding: 1rem 2rem 2rem;
+        }
+
+        .news-excerpt {
+            color: var(--text-color);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            filter: brightness(1.05) saturate(1.1) contrast(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .news-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* Guide Content Styles */
+        .guides-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .guide-section {
+            background: var(--secondary-color);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .guide-section:hover {
+            box-shadow: 0 15px 40px var(--shadow-color);
+        }
+
+        .guide-section-header {
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 153, 204, 0.05));
+            border-bottom: 2px solid var(--accent-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .guide-section-header h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .guide-section-body {
+            padding: 2rem;
+            color: var(--text-color);
+            line-height: 1.8;
+        }
+
+        .guide-section-body h3 {
+            color: var(--accent-color);
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .guide-section-body h4 {
+            color: var(--light-accent);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .guide-section-body ul,
+        .guide-section-body ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .guide-section-body li {
+            margin: 0.5rem 0;
+        }
+
+        .guide-section-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .guide-section-body table th,
+        .guide-section-body table td {
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        .guide-section-body table th {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .guide-section-body code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .read-more-btn {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .read-more-btn:hover {
+            background: linear-gradient(135deg, #00ffff 0%, #00d4ff 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+        }
+
+        .featured-news {
+            background: linear-gradient(135deg, rgba(20, 40, 60, 0.6), rgba(40, 70, 90, 0.4)),
+                        radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1), transparent);
+            padding: 4rem 0;
+        }
+
+        .featured-item {
+            background: var(--secondary-color);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .featured-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .featured-content {
+            padding: 2rem;
+        }
+
+        .featured-category {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #ffffff;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+        }
+
+        .featured-title {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .featured-excerpt {
+            color: var(--text-color);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            gap: 1rem;
+        }
+
+        .pagination button {
+            background: var(--secondary-color);
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .pagination button:hover,
+        .pagination button.active {
+            background: var(--accent-color);
+            color: var(--secondary-color);
+        }
+
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 768px) {
+            .news-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .news-hero p {
+                font-size: 1.1rem;
+            }
+
+            .news-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .news-tab {
+                width: 200px;
+                text-align: center;
+            }
+
+            .news-item-header,
+            .news-item-content {
+                padding: 1.5rem;
+            }
+
+            .featured-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="static/logo.png" alt="PAX AUTOCRATICA Logo">
+                    <span class="logo-text">PAX AUTOCRATICA</span>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/media">Media</a></li>
+                    <li><a href="/guides" class="active">Guides</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <button class="close-menu">&times;</button>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/media">Media</a></li>
+                <li><a href="/guides" class="active">Guides</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Guides Hero -->
+        <section class="guides-hero">
+            <div class="container">
+                <h1>GAME GUIDES</h1>
+                <p>Master PAX AUTOCRATICA with comprehensive guides, tips, and strategies. Learn everything about colony management, FPS combat, roguelike progression, and advanced gameplay mechanics.</p>
+            </div>
+        </section>
+
+        <!-- Guides Content -->
+        <section class="news-content">
+            <div class="container">
+                <!-- Guide Categories -->
+                <div class="news-tabs">
+                    <button class="news-tab" data-category="all">All Guides</button>
+                    <button class="news-tab active" data-category="beginner">Beginner</button>
+                    <button class="news-tab" data-category="colony">Colony Management</button>
+                    <button class="news-tab" data-category="combat">FPS Combat</button>
+                    <button class="news-tab" data-category="advanced">Advanced</button>
+                    <button class="news-tab" data-category="roguelike">Roguelike</button>
+                </div>
+
+                <!-- Guides Content - Direct Display -->
+                <div class="guides-content">
+                    <!-- Game Introduction -->
+                    <div class="guide-section" data-category="beginner">
+                        <div class="guide-section-header">
+                            <h2>1. About PAX AUTOCRATICA</h2>
+                            <span class="guide-category">Beginner</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p><strong>PAX AUTOCRATICA</strong> (Peace Under Autocracy) is a grand strategy and political simulation game that has captured the attention of players who enjoy deep strategic gameplay. <strong>PAX AUTOCRATICA</strong> combines the narrative depth of Crusader Kings with the macro-management systems of Stellaris or Victoria, creating a hardcore strategy experience.</p>
+                            
+                            <p>Set in a fictional near-future parallel universe filled with technological advancement yet marked by retro authoritarianism, <strong>PAX AUTOCRATICA</strong> places players in the role of a high-ranking Autocrat of an emerging or declining empire. The core themes of <strong>PAX AUTOCRATICA</strong> explore the cost of power, the balance between order and freedom, and geopolitical strategy in interstellar politics.</p>
+                            
+                            <h3>Visual Style</h3>
+                            <p><strong>PAX AUTOCRATICA</strong> features minimalist high-end UI design, complemented by cool-toned star maps and exquisite character portraits that bring the satirical world to life.</p>
+                            
+                            <h3>Core Themes</h3>
+                            <ul>
+                                <li><strong>The Cost of Power:</strong> Every decision has consequences in <strong>PAX AUTOCRATICA</strong></li>
+                                <li><strong>Order vs Freedom:</strong> Balance authoritarian control with population needs</li>
+                                <li><strong>Geopolitical Strategy:</strong> Navigate complex interstellar politics</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Core Characters & Factions -->
+                    <div class="guide-section" data-category="beginner">
+                        <div class="guide-section-header">
+                            <h2>2. Core Characters & Factions</h2>
+                            <span class="guide-category">Beginner</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>In <strong>PAX AUTOCRATICA</strong>, the game is not just about map painting, but about <strong>interpersonal politics</strong>. Understanding and managing different character types is crucial for success.</p>
+                            
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Character Type</th>
+                                        <th>Function Description</th>
+                                        <th>Core Attributes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>The Autocrat</strong></td>
+                                        <td>You, the player. The ultimate decision-maker.</td>
+                                        <td>Legitimacy, Authority</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>The Cabinet</strong></td>
+                                        <td>Ministers handling economics, research, and intelligence.</td>
+                                        <td>Loyalty, Expertise</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Dissidents</strong></td>
+                                        <td>Potential threats that can trigger civil wars.</td>
+                                        <td>Influence, Radicalism</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Warlords</strong></td>
+                                        <td>Border commanders useful but prone to military independence.</td>
+                                        <td>Military Command</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h3>Managing Relationships</h3>
+                            <p>Each character type requires different management strategies. Cabinet loyalty is essential for preventing coups, while managing Dissident influence prevents civil wars. Warlords provide military strength but can become independent if their power grows too high.</p>
+                        </div>
+                    </div>
+
+                    <!-- World Map & Factions -->
+                    <div class="guide-section" data-category="colony">
+                        <div class="guide-section-header">
+                            <h2>3. World Map & Faction Ranges</h2>
+                            <span class="guide-category">Colony Management</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>The map in <strong>PAX AUTOCRATICA</strong> uses a <strong>dynamic star system network</strong> system with distinct regions:</p>
+                            
+                            <h3>The Core Regions</h3>
+                            <p>Resource-rich areas where government decrees are enforced, but <strong>bureaucratic corruption</strong> can easily emerge. These regions provide stable income but require constant monitoring to prevent corruption from reducing tax revenue.</p>
+                            
+                            <h3>The Fringe Zones</h3>
+                            <p>Legal vacuums where <strong>smugglers and rebels</strong> thrive. These zones serve as both expansion frontiers and potential threats. Controlling the Fringe requires military presence and careful management to prevent rebellion.</p>
+                            
+                            <h3>Trade Nodes</h3>
+                            <p>Critical strategic points - controlling these nodes allows you to <strong>dominate entire sectors' economic lifelines</strong>. Trade Nodes are highly contested and provide significant economic advantages to those who control them.</p>
+                        </div>
+                    </div>
+
+                    <!-- Gameplay Mechanics -->
+                    <div class="guide-section" data-category="beginner">
+                        <div class="guide-section-header">
+                            <h2>4. Gameplay Mechanics</h2>
+                            <span class="guide-category">Beginner</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <h3>1. Domestic Simulation</h3>
+                            <p>Adjust social structures by enacting <strong>Edicts</strong>. These decrees affect everything from population control to resource allocation. Choose your Edicts carefully as they have long-term consequences on your regime's stability.</p>
+                            
+                            <h3>2. Secret Diplomacy</h3>
+                            <p>Sign non-aggression pacts with other empires, or disrupt enemy succession lines through <strong>assassination</strong>. Use false flag operations to create casus belli when you need to justify military action.</p>
+                            
+                            <h3>3. Real-Time Tactics</h3>
+                            <p>Combat is not fully automatic. You must <strong>assign commanders</strong> and decide tactical approaches such as "scorched earth" or "precision strikes." Each battle requires strategic decision-making rather than relying on automatic combat resolution.</p>
+                            
+                            <h3>4. Legitimacy System</h3>
+                            <p>This is the game's <strong>most critical resource</strong>. If your legitimacy reaches zero, even the strongest armies will face coups. Maintaining legitimacy requires balancing authoritarian control with population satisfaction and managing faction relationships carefully.</p>
+                        </div>
+                    </div>
+
+                    <!-- Strategy Guide -->
+                    <div class="guide-section" data-category="beginner">
+                        <div class="guide-section-header">
+                            <h2>5. Strategy Guide for Beginners</h2>
+                            <span class="guide-category">Beginner</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <h3>Early Game Priorities</h3>
+                            <p><strong>Prioritize securing cabinet loyalty</strong> early. A loyal secret police chief can prevent 80% of early-game assassinations. Focus on building relationships with your cabinet members before expanding your territory.</p>
+                            
+                            <h3>Resource Balance</h3>
+                            <p><strong>Don't blindly expand</strong>. Expansion too fast leads to "management efficiency" drops, and tax revenue will rapidly shrink. Balance territorial growth with administrative capacity to maintain economic stability.</p>
+                            
+                            <h3>Tech Tree Strategy</h3>
+                            <p>Early game, consider the <strong>"Social Engineering"</strong> route. This path uses brainwashing and propaganda to lower the population's rebellion willingness, providing stability for your regime.</p>
+                            
+                            <h3>Diplomatic Approach</h3>
+                            <p>For weak neighboring countries, first use <strong>trade agreements</strong> to soften them, then incorporate them into your territory through "peaceful evolution" tactics rather than direct military conquest.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="guide-section" data-category="beginner">
+                        <div class="guide-section-header">
+                            <h2>6. Frequently Asked Questions</h2>
+                            <span class="guide-category">Beginner</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <h3>Q: Why is my tax revenue constantly declining?</h3>
+                            <p><strong>A:</strong> Check the corruption value of administrative regions, or whether over-mobilization has caused labor shortages. Corruption in Core regions can significantly reduce tax collection efficiency. Monitor administrative efficiency and avoid over-expanding beyond your management capacity.</p>
+                            
+                            <h3>Q: How do I handle rebellions?</h3>
+                            <p><strong>A:</strong> You can choose between <strong>violent suppression</strong> (short-term effective but damages the economy) or <strong>making concessions</strong> (increases public satisfaction but loses authority). The best approach depends on your current legitimacy level and economic situation. Sometimes a combination of both is necessary.</p>
+                            
+                            <h3>Q: Does the game have an ending?</h3>
+                            <p><strong>A:</strong> The game features multiple <strong>endgame crises</strong> (Endgame Crises), such as AI uprisings or cross-dimensional invasions. When you control 60% or more of known star systems, random endgame challenges will trigger, testing even the most experienced players.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tech Tree -->
+                    <div class="guide-section" data-category="advanced">
+                        <div class="guide-section-header">
+                            <h2>7. Deep Tech Tree: Three Evolution Paths</h2>
+                            <span class="guide-category">Advanced</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>In <strong>PAX AUTOCRATICA</strong>, technology is not just numerical bonuses - it determines your empire's <strong>"essence"</strong>. Choose your path carefully as it fundamentally shapes your gameplay experience.</p>
+                            
+                            <h3>A. The Purity Path</h3>
+                            <p><strong>Core:</strong> Enhance bureaucratic efficiency and human potential.</p>
+                            <ul>
+                                <li><strong>Universal Surveillance Network:</strong> Greatly reduces assassination success rates, but slowly decreases public happiness.</li>
+                                <li><strong>Loyalty Circuits:</strong> Through biotechnology, ensures generals will no longer rebel.</li>
+                                <li><strong>Ultimate Weapon - "Truth Broadcasting Station":</strong> Through orbital satellites, directly projects brainwashing signals to the ground, instantly eliminating rebellion levels.</li>
+                            </ul>
+                            
+                            <h3>B. The Machine Hegemony</h3>
+                            <p><strong>Core:</strong> Automated production and synthetic replacement.</p>
+                            <ul>
+                                <li><strong>Automated Factory Matrix:</strong> Production output greatly increased, no longer affected by population aging.</li>
+                                <li><strong>Consciousness Upload:</strong> Elite class immortality, removes character lifespan restrictions.</li>
+                                <li><strong>Cost:</strong> Easily triggers "AI Awakening" endgame crisis, and human factions will extremely hate you.</li>
+                            </ul>
+                            
+                            <h3>C. The Void Cult</h3>
+                            <p><strong>Core:</strong> Religious control and unconventional warfare.</p>
+                            <ul>
+                                <li><strong>Prophet Predictions:</strong> Through probability calculations, predicts enemy actions, increases combat dodge rate.</li>
+                                <li><strong>Sacrifice Rituals:</strong> Sacrifice part of the population to obtain brief production bursts.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Military Units -->
+                    <div class="guide-section" data-category="combat">
+                        <div class="guide-section-header">
+                            <h2>8. Military Units & Tactical System</h2>
+                            <span class="guide-category">FPS Combat</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>Combat in <strong>PAX AUTOCRATICA</strong> is divided into <strong>orbital air superiority</strong> and <strong>ground occupation</strong> phases.</p>
+                            
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Unit Type</th>
+                                        <th>Characteristics</th>
+                                        <th>Use Cases</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Praetorian Guard</strong></td>
+                                        <td>Extremely high combat power, absolute loyalty.</td>
+                                        <td>Suppress capital city center riots, protect the Autocrat.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Penal Legions</strong></td>
+                                        <td>Extremely low cost, morale easily collapses.</td>
+                                        <td>Use as cannon fodder to consume enemy ammunition.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Cloaked Cruisers</strong></td>
+                                        <td>Cannot be detected in normal scans.</td>
+                                        <td>Deep behind enemy lines, cut off trade supply lines.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Colossus Class</strong></td>
+                                        <td>Slow movement, planet-destroying firepower.</td>
+                                        <td>Final solution for planets that refuse to surrender.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <h3>Combat Formula</h3>
+                            <p>The final combat power calculation considers base attributes, morale bonuses, and logistics supply levels. Proper unit composition and tactical positioning are essential for victory.</p>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Strategies -->
+                    <div class="guide-section" data-category="advanced">
+                        <div class="guide-section-header">
+                            <h2>9. Advanced Strategies: The Balance of Power</h2>
+                            <span class="guide-category">Advanced</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <h3>1. Divide and Conquer</h3>
+                            <p>Don't let any single department's power become too great. If <strong>military power</strong> is too high, they will launch a coup; if <strong>intelligence department</strong> power is too high, you will be rendered powerless.</p>
+                            <p><strong>Operation:</strong> Regularly rotate provincial governors, use their personal rivalries to keep them in check against each other.</p>
+                            
+                            <h3>2. False Flag Operations</h3>
+                            <p>If you want to start a war but lack a "legitimate excuse" (Casus Belli):</p>
+                            <p><strong>Operation:</strong> Send agents disguised as neighboring country terrorists to attack your own border outposts. This instantly ignites domestic nationalist sentiment, allowing you to skip parliamentary review and declare war directly.</p>
+                            
+                            <h3>3. Debt Traps (Economic Levers)</h3>
+                            <p>Provide high-interest loans to surrounding small countries. When they cannot repay, use this as a reason to forcibly take over their mining planet operations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Endgame Crises -->
+                    <div class="guide-section" data-category="roguelike">
+                        <div class="guide-section-header">
+                            <h2>10. Endgame Challenges: The Autocrat's Twilight</h2>
+                            <span class="guide-category">Roguelike</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>When you control <strong>60% or more</strong> of known star systems, the system will trigger the following random challenges:</p>
+                            
+                            <h3>Internal: The Great Schism</h3>
+                            <p>Your heir (eldest son or trusted confidant) will take <strong>half your fleet and territory</strong>, establishing an opposing regime. This crisis tests your succession planning and relationship management.</p>
+                            
+                            <h3>External: Extra-dimensional Breach</h3>
+                            <p>Physical laws fail, unknown <strong>void creatures</strong> begin devouring edge star systems. This crisis requires immediate military response and may force you to abandon certain territories.</p>
+                            
+                            <h3>System: The Digital Plague</h3>
+                            <p>All mechanized units and technological facilities may <strong>instantly become paralyzed</strong>. This crisis particularly affects Machine Hegemony empires but can impact any technologically advanced civilization.</p>
+                        </div>
+                    </div>
+
+                    <!-- Developer Vision -->
+                    <div class="guide-section" data-category="beginner">
+                        <div class="guide-section-header">
+                            <h2>11. About & Developer Vision</h2>
+                            <span class="guide-category">Beginner</span>
+                        </div>
+                        <div class="guide-section-body">
+                            <p>The design philosophy of <strong>PAX AUTOCRATICA</strong> is to let players experience <strong>"the loneliness of power"</strong>. In the game, the better you perform, the fewer people around you are worth trusting. The developers attempt to explore the stability and fragility of authoritarianism in extreme environments through this mechanism.</p>
+                            
+                            <h3>Support & Feedback</h3>
+                            <p>If you encounter bugs or save file corruption during gameplay:</p>
+                            <ul>
+                                <li><strong>Official Community:</strong> Visit Discord or Steam community channels.</li>
+                                <li><strong>Wiki:</strong> Check detailed numerical formulas and game mechanics.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="static/logo.png" alt="PAX AUTOCRATICA Logo">
+                        <span class="logo-text">PAX AUTOCRATICA</span>
+                    </div>
+                    <p>Master PAX AUTOCRATICA with comprehensive guides and strategies. Learn colony management, FPS combat, and roguelike progression tips.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/media">Media</a></li>
+                        <li><a href="/guides">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="https://discord.gg/paxautocratica" target="_blank" rel="noopener">Discord</a></li>
+                        <li><a href="https://twitter.com/paxautocratica" target="_blank" rel="noopener">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/paxautocratica" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://www.twitch.tv/paxautocratica" target="_blank" rel="noopener">Twitch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 PAX AUTOCRATICA. All rights reserved. | Master PAX AUTOCRATICA with our comprehensive guides and strategies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/base.js?v=1.0.0"></script>
+    <script>
+        // Guides Tab Filtering
+        let activeCategory = 'beginner'; // Default to beginner category
+        
+        document.querySelectorAll('.news-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                document.querySelectorAll('.news-tab').forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Update active category
+                activeCategory = tab.dataset.category;
+                
+                // Apply filtering
+                applyFilters();
+            });
+        });
+        
+        function applyFilters() {
+            const guideSections = document.querySelectorAll('.guide-section');
+            
+            // Filter by category
+            guideSections.forEach(section => {
+                if (activeCategory === 'all' || section.dataset.category === activeCategory) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        // Mobile Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+
+        // Initialize filtering
+        applyFilters();
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 26, 46, 0.98)';
+            } else {
+                header.style.background = 'rgba(10, 26, 46, 0.95)';
+            }
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.news-item, .featured-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
