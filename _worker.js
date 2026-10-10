@@ -16,7 +16,7 @@ function secure(response, request, noindex = false) {
     headers.set('Referrer-Policy', 'no-referrer');
     headers.set('X-Frame-Options', 'DENY');
     headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), payment=()');
-    headers.set('Cache-Control', 'no-store, max-age=0');
+    headers.set('Cache-Control', 'no-store, no-transform, max-age=0');
     if (noindex || new URL(request.url).hostname.endsWith('.pages.dev')) headers.set('X-Robots-Tag', 'noindex');
     return new Response(request.method === 'HEAD' ? null : response.body, {status: response.status, statusText: response.statusText, headers});
 }
