@@ -1,5 +1,5 @@
-const pagePaths = new Set(['/', '/guides', '/media', '/news', '/privacy-policy', '/terms-of-service']);
-const publicFiles = new Set([
+const pagePaths = new Set(['/related-games', '/', '/guides', '/media', '/news', '/privacy-policy', '/terms-of-service']);
+const publicFiles = new Set(['/static/game-discovery.css',
     '/static/site.css', '/static/fieldnotes.svg', '/static/retire-workers.js',
     '/sw.js', '/robots.txt', '/sitemap.xml', '/BingSiteAuth.xml',
     '/B362957FC36C5EDDD6079B6D78330424.txt'
