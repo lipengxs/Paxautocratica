@@ -1,37 +1,30 @@
 {
   "game": "PAX AUTOCRATICA",
   "origin": "https://pax-autocratica.com",
-  "updated": "2026-10-12",
-  "title": "Games to Explore After PAX AUTOCRATICA",
-  "description": "Compare selected games for PAX AUTOCRATICA readers, with clear reasons to explore each setting and links to independent guides.",
-  "intro": "These reading routes explore how other games frame planning, scarce resources, and conflict. They are alternatives to research, not verified strategies for PAX AUTOCRATICA.",
-  "disclosure": "These independent guide websites are maintained by the same operator. Recommendations are editorial suggestions, not official partnerships or endorsements. Official game sources are listed separately.",
-  "entries": [
-    {
-      "name": "Chronicles: Medieval",
-      "url": "https://chronicles-medieval.com/",
-      "category": "Action, Fantasy & Strategy",
-      "tags": "Medieval sandbox · battles",
-      "reason": "Explore a medieval sandbox through battle and campaign questions. It is a useful research route when planning larger conflicts matters more than a single character’s routine.",
-      "difference": "Chronicles: Medieval centres on a medieval sandbox concerned with battles and campaign decisions; PAX AUTOCRATICA centres on colony management and conflict. Similar interests do not imply identical mechanics or multiplayer support."
-    },
-    {
-      "name": "Ardem",
-      "url": "https://ardemguide.com/",
-      "category": "Survival & Exploration",
-      "tags": "Survival · crafting · exploration",
-      "reason": "Research crafting, exploration and survival in an outbreak setting. Its source-aware guides are useful for comparing what you carry, where you settle and how you prepare to travel.",
-      "difference": "Ardem centres on survival, crafting and exploration across an outbreak setting; PAX AUTOCRATICA centres on colony management and conflict. Similar interests do not imply identical mechanics or multiplayer support."
-    },
-    {
-      "name": "Frostrail",
-      "url": "https://frostrailguide.com/",
-      "category": "Survival & Exploration",
-      "tags": "Train systems · frozen survival · co-op",
-      "reason": "Explore how train operation, onboard facilities and expeditions fit together. The guide distinguishes announced core systems from future plans and avoids invented upgrade costs.",
-      "difference": "Frostrail centres on survival expeditions organised around an expanding train; PAX AUTOCRATICA centres on colony management and conflict. Similar interests do not imply identical mechanics or multiplayer support."
-    }
-  ],
+  "updated": "2026-10-14",
+  "title": "PAX AUTOCRATICA Reading Paths",
+  "description": "Research PAX AUTOCRATICA through the site’s source-led guides, attributed updates and official-media references. These pages help separate public information from unanswered questions.",
+  "intro": "Research PAX AUTOCRATICA through the site’s source-led guides, attributed updates and official-media references. These pages help separate public information from unanswered questions.",
+  "disclosure": "",
+  "entries": [],
   "articles": [],
-  "guideRecommendations": []
+  "guideRecommendations": [],
+  "directoryLinkRel": "nofollow",
+  "internalResources": [
+    {
+      "name": "Source-led guides",
+      "path": "/guides",
+      "reason": "Begin with the reading guide to understand what the available public information can establish."
+    },
+    {
+      "name": "Attributed updates",
+      "path": "/news",
+      "reason": "Follow updates with attribution and check their dates before treating plans as current."
+    },
+    {
+      "name": "Media and original sources",
+      "path": "/media",
+      "reason": "Find the source context for public footage and images before drawing conclusions about systems."
+    }
+  ]
 }
